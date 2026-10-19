@@ -1,0 +1,57 @@
+
+name: Build Shreyas Swarna Website
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check project files
+        run: |
+          pwd
+          ls -la
+          test -f package.json || {
+            echo "ERROR: package.json is missing from repository root."
+            exit 1
+          }
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build production website
+        run: npm run build
+
+      - name: Verify production output
+        run: |
+          test -f dist/index.html
+          echo "Production build created successfully."
+          find dist -maxdepth 2 -type f | head -50
+
+      - name: Package website for Hostinger
+        run: |
+          cd dist
+          zip -r ../shreyas-swarna-dist.zip .
+
+      - name: Upload production ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: shreyas-swarna-dist
+          path: shreyas-swarna-dist.zip
+          if-no-files-found: error
+          retention-days: 14
