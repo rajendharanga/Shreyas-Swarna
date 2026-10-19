@@ -1,0 +1,10 @@
+# Domain 301 Redirects: .com to .ai with path preservation
+https://shreyasswarna.com/* https://shreyasswarna.ai/:splat 301!
+http://shreyasswarna.com/* https://shreyasswarna.ai/:splat 301!
+https://www.shreyasswarna.com/* https://shreyasswarna.ai/:splat 301!
+http://www.shreyasswarna.com/* https://shreyasswarna.ai/:splat 301!
+https://www.shreyasswarna.ai/* https://shreyasswarna.ai/:splat 301!
+http://shreyasswarna.ai/* https://shreyasswarna.ai/:splat 301!
+
+# SPA Fallback
+/* /index.html 200

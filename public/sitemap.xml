@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage: Primary Canonical Route -->
+  <url>
+    <loc>https://shreyasswarna.ai/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://shreyasswarna.ai/assets/hero_gold_sculptural.jpg</image:loc>
+      <image:title>SHREYAS SWARNA.AI — Personalised 22K Gold Jewellery Design</image:title>
+      <image:caption>Sculptural Indian gold jewellery designed for bespoke personalisation and master artisan craftsmanship.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shreyasswarna.ai/assets/retail_craft_partner.jpg</image:loc>
+      <image:title>SHREYAS SWARNA.AI — Retailer Showroom &amp; Master Goldsmith Workshop Partnership</image:title>
+      <image:caption>Empowering independent jewellery showrooms across India with in-store design studios and exclusive collections.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About & Founder Vision Page -->
+  <url>
+    <loc>https://shreyasswarna.ai/about</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://shreyasswarna.ai/assets/hero_gold_sculptural.jpg</image:loc>
+      <image:title>SHREYAS SWARNA.AI — Founder Vision &amp; Strategic Blueprint</image:title>
+      <image:caption>A new era of personalised gold jewellery under Shreyas Group by Gandra Srinivas Rao.</image:caption>
+    </image:image>
+  </url>
+</urlset>
